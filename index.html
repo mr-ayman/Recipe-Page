@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- displays site properly based on user's device -->
+
+    <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+
+    <title>Recipe page</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,300..900;1,300..900&family=Young+Serif&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap" rel="stylesheet">
+
+    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+    <style>
+        .attribution {
+            font-size: 11px;
+            color: hsl(14, 45%, 36%);
+            text-align: center;
+        }
+        
+        .attribution a {
+            color: hsl(228, 45%, 44%);
+        }
+        
+        body {
+            background-color: hsl(30, 54%, 90%);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 250vh;
+            font-family: "Young Serif", serif;
+            font-style: normal;
+        }
+        
+        .total {
+            background-color: white;
+            width: 700px;
+            height: 1650px;
+            border-radius: 15px;
+        }
+        
+        .image {
+            margin-top: 30px;
+            width: 700px;
+            height: 300px;
+            border-radius: 10px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        
+        .image img {
+            border-radius: 10px;
+        }
+        
+        .first_heading {
+            margin-left: 30px;
+            font-size: 40px;
+            font-weight: 100px;
+            margin-top: 30px;
+            margin-bottom: 0px;
+        }
+        
+        .first_para {
+            margin-left: 30px;
+            font-size: 13px;
+            color: grey;
+            margin-top: 20px;
+        }
+        
+        .preparation {
+            width: 630px;
+            height: 180px;
+            background-color: hsl(330, 100%, 98%);
+            margin-left: 30px;
+            border-radius: 10px;
+            display: flex;
+            flex-direction: column;
+        }
+        
+        .preparation h3 {
+            margin-top: 20px;
+            margin-left: 20px;
+            padding-bottom: 0px;
+            font-family: "Outfit", sans-serif;
+            color: hsl(332, 51%, 32%);
+            margin-bottom: 10px;
+        }
+        
+        .preparation ul {
+            margin-top: 0px;
+            margin-left: 20px;
+            font-family: "Outfit", sans-serif;
+        }
+        
+        .preparation ul li {
+            padding: 7px;
+        }
+        
+        .first_li1 {
+            font-weight: bold;
+            color: hsl(30, 10%, 34%);
+        }
+        
+        .first_li2 {
+            font-weight: light;
+            color: hsl(30, 10%, 34%);
+        }
+        
+        .Ingredients {
+            width: 630px;
+            height: 250px;
+            margin-left: 30px;
+            display: flex;
+            flex-direction: column;
+        }
+        
+        .Ingredients h2 {
+            color: hsl(14, 45%, 36%);
+            margin-bottom: 0px;
+        }
+        
+        .Ingredients ul li {
+            padding: 7px;
+        }
+        
+        .second1 {
+            color: hsl(30, 10%, 34%);
+        }
+        
+        .Ingredients ul {
+            font-family: "Outfit", sans-serif;
+        }
+        
+        .Instructions {
+            width: 635px;
+            height: 380px;
+            margin-left: 30px;
+            display: flex;
+            flex-direction: column;
+        }
+        
+        .Instructions h2 {
+            color: hsl(14, 45%, 36%);
+            margin-bottom: 0px;
+        }
+        
+        .Instructions ol {
+            font-family: "Outfit", sans-serif;
+            margin-top: 0px;
+        }
+        
+        .instrucls {
+            color: hsl(30, 10%, 34%);
+            font-weight: light;
+        }
+        
+        .instrucl {
+            font-weight: bold;
+        }
+        
+        .nu {
+            display: flex;
+        }
+        
+        .Nutrition h2 {
+            color: hsl(14, 45%, 36%);
+            margin-bottom: 10px;
+            margin-left: 30px;
+        }
+        
+        .Nutrition .table {
+            color: hsl(30, 10%, 34%);
+            font-weight: light;
+            font-family: "Outfit", sans-serif;
+            margin-left: 30px;
+            margin-bottom: 30px;
+        }
+        
+        .Nutrition .one {
+            color: hsl(30, 10%, 34%);
+            font-weight: light;
+            font-family: "Outfit", sans-serif;
+        }
+        
+        .Nutrition .nu .two {
+            font-family: "Young Serif", serif;
+            color: hsl(14, 45%, 36%);
+            /* margin-left: 300px; */
+        }
+        
+        .Nutrition div {
+            margin-left: 40px;
+        }
+        
+        .one,
+        .two {
+            margin-top: 0px;
+            margin-bottom: 5px;
+            margin-left: 30px;
+        }
+        
+        .nu .two1 {
+            margin-left: 320px;
+        }
+        
+        .nu .two2 {
+            margin-left: 335px;
+        }
+        
+        .nu .two3 {
+            margin-left: 325px;
+        }
+        
+        .nu .two4 {
+            margin-left: 350px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="total">
+        <div class="image">
+            <img src="assets/images/image-omelette.jpeg" alt="" width="640px" height="300px">
+        </div>
+
+        <p class="first_heading">Simple Omelette Recipe</p>
+        <p class="first_para">An easy and quick dish, perfect for any meal. This classic omelette combines beaten eggs cooked to perfection, optionally filled with your choice of cheese, vegetables, or meats.</p>
+        <div class="preparation">
+            <h3 class="prep">Preparation time</h3>
+            <ul>
+                <li style="color: hsl(14,45%,36%)">
+                    <span class="first_li1">Total:</span><span class="first_li2"> Approximately 10 minutes</span>
+                </li>
+                <li style="color: hsl(14,45%,36%)">
+                    <span class="first_li1">Preparation:</span><span class="first_li2"> 5 minutes</span>
+                </li>
+                <li style="color: hsl(14,45%,36%)">
+                    <span class="first_li1">Cooking:</span><span class="first_li2"> 5 minutes</span>
+                </li>
+            </ul>
+        </div>
+        <div class="Ingredients">
+            <h2>Ingredients</h2>
+            <ul>
+                <li style="color: hsl(14,45%,36%)"><span class="second1">2-3 large eggs</span></li>
+                <li style="color: hsl(14,45%,36%)"><span class="second1">Salt, to taste</span></li>
+                <li style="color: hsl(14,45%,36%)"><span class="second1">Pepper, to taste</span></li>
+                <li style="color: hsl(14,45%,36%)"><span class="second1">1 tablespoon of butter or oil</span></li>
+                <li style="color: hsl(14,45%,36%)"><span class="second1">Optional fillings: cheese, diced vegetables, cooked meats, herbs</span></li>
+            </ul>
+        </div>
+        <hr style="width:90%;text-align:center;margin-left:30px;color: hsl(30, 18%, 87%);opacity: 0.3;">
+        <div class="Instructions">
+            <h2>Instructions</h2>
+            <ol>
+                <li style="color: hsl(14,45%,36%)">
+                    <p><span class="instrucl">Beat the eggs:</span><span class="instrucls"> a bowl, beat the eggs with a pinch of salt and pepper until they are well mixed. You can add a tablespoon of water or milk for a fluffier texture.</span></p>
+                </li>
+                <li style="color: hsl(14,45%,36%)">
+                    <p><span class="instrucl">Heat the pan:</span><span class="instrucls"> Place a non-stick frying pan over medium heat and add butter or oil.</span></p>
+                </li>
+                <li style="color: hsl(14,45%,36%)">
+                    <p><span class="instrucl">Cook the omelette:</span><span class="instrucls"> Once the butter is melted and bubbling, pour in the eggs. Tilt the pan to ensure the eggs evenly coat the surface.</span></p>
+                </li>
+                <li style="color: hsl(14,45%,36%)">
+                    <p><span class="instrucl">Add fillings (optional):</span><span class="instrucls"> When the eggs begin to set at the edges but are still slightly runny in the middle, sprinkle your chosen fillings over one half of the omelette.</spa></p>
+                </li>
+                <li style="color: hsl(14,45%,36%)">
+                    <p><span class="instrucl">Fold and serve:</span><span class="instrucls"> As the omelette continues to cook, carefully lift one edge and fold it over the fillings. Let it cook for another minute, then slide it onto a plate.</span></p>
+                </li>
+                <li style="color: hsl(14,45%,36%)">
+                    <p><span class="instrucl">Enjoy:</span><span class="instrucls"> Serve hot, with additional salt and pepper if needed.</span></p>
+                </li>
+            </ol>
+        </div>
+        <hr style="width:90%;text-align:center;margin-left:30px;color: hsl(30, 18%, 87%);opacity: 0.3;">
+        <div class="Nutrition">
+            <h2>Nutrition</h2>
+            <p class="table">The table below shows nutritional values per serving without the additional fillings.</p>
+            <div class="nu nu1">
+                <p class="one">Calories</p>
+                <p class="two two1">277kcal</p>
+            </div>
+            <hr style="width:90%;text-align:center;margin-left:30px;color: hsl(30, 18%, 87%);opacity: 0.3;">
+            <div class="nu nu2">
+                <p class="one">Carbs</p>
+                <p class="two two2">0g</p>
+            </div>
+            <hr style="width:90%;text-align:center;margin-left:30px;color: hsl(30, 18%, 87%);opacity: 0.3;">
+            <div class="nu nu3">
+                <p class="one">Protein</p>
+                <p class="two two3">20g</p>
+            </div>
+            <hr style="width:90%;text-align:center;margin-left:30px;color: hsl(30, 18%, 87%);opacity: 0.3;">
+            <div class="nu nu4">
+                <p class="one">Fat</p>
+                <p class="two two4">22g</p>
+            </div>
+        </div>
+
+    </div>
+</body>
+
+</html>
